@@ -26,7 +26,7 @@ const DefaultTabBar = createReactClass({
 
   getDefaultProps() {
     return {
-      activeTextColor: 'navy',
+      activeTextColor: '#5254cc',
       inactiveTextColor: 'black',
       backgroundColor: null,
     };
@@ -62,8 +62,8 @@ const DefaultTabBar = createReactClass({
     const tabUnderlineStyle = {
       position: 'absolute',
       width: containerWidth / numberOfTabs,
-      height: 4,
-      backgroundColor: 'navy',
+      height: 2,
+      backgroundColor: '#5254cc',
       bottom: 0,
     };
 
@@ -86,7 +86,7 @@ const DefaultTabBar = createReactClass({
                 { translateX },
               ]
             },
-            this.props.tabBarUnderlineStyle,
+            this.props.underlineStyle,
           ]}
         />
       </View>
@@ -100,12 +100,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingBottom: 10,
+    borderBottomWidth : 2,
+    borderBottomColor : '#eaeaea',
   },
   tabs: {
     height: 50,
     flexDirection: 'row',
     justifyContent: 'space-around',
-    borderWidth: 1,
     borderTopWidth: 0,
     borderLeftWidth: 0,
     borderRightWidth: 0,
