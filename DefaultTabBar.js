@@ -100,8 +100,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingBottom: 10,
-    borderBottomWidth : 2,
-    borderBottomColor : '#eaeaea',
+    borderBottomWidth : 1,
+    borderBottomColor : '#b8b8b8',
   },
   tabs: {
     height: 50,
